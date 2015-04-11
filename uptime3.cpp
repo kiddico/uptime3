@@ -6,9 +6,9 @@ int main(){
 	int time = std::stoi(uptimefile.read());
 	
 	int weeks   = time    / (7*24*60*60);
-	int days    = time	 / (24*60*60)   - 7*weeks;
-	int hours   = time / (60*60)      - 7*24*weeks    -24*days;
-	int minutes = time / (60)			 - 7*24*60*weeks -24*60*days - 60*hours; 	 
+	int days    = time    / (24*60*60)   - 7*weeks;
+	int hours   = time    / (60*60)      - 7*24*weeks    -24*days;
+	int minutes = time    / (60)         - 7*24*60*weeks -24*60*days - 60*hours; 	 
 
 	std::string uptime = "Up Time: ";
 	
