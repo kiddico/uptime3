@@ -7,3 +7,5 @@ It's THAT SIMPLE. If I could I would mail every person who downloads this a big 
 </p>
 
 <p>Oh yeah also this project uses some stuff from another one of my projects <a href="https://github.com/kiddico/EasyIO"> EasyIO</a>.</p>
+
+<p>Really all I wanted was uptime -p to say "uptime:", instead of "up:". But apparently that was too much.</p>
