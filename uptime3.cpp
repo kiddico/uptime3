@@ -10,7 +10,7 @@ int main(){
 	int hours   = time    / (60*60)      - 7*24*weeks    -24*days;
 	int minutes = time    / (60)         - 7*24*60*weeks -24*60*days - 60*hours; 	 
 
-	std::string uptime = "Up Time: ";
+	std::string uptime = "Uptime: ";
 	
 	if(weeks !=0)
 		if(weeks==1)
