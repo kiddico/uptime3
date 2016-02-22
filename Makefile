@@ -3,3 +3,7 @@ uptime3:
 
 install: uptime3
 	cp uptime3 /usr/local/bin
+
+clean:
+	rm -f *~
+	rm -f .*~
