@@ -1,0 +1,3 @@
+[submodule "EasyIO"]
+	path = EasyIO
+	url = https://github.com/kiddico/EasyIO

@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "strd.hpp"
+#include "EasyIO/strd.hpp"
 int main(){
 	//getting time from the uptime file in unix
 	readf uptimefile("/proc/uptime");
