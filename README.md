@@ -1,9 +1,6 @@
-<p>
-This command line tool is the next gen-iest of all the next gen command line utilities.
-It's the macbook of the Up Time unix command line utility world. It's so simple its revolutionary.</p>
+## Uptime3
+### The best gosh darn uptime application to grace our beautiful planet.
 
-<p>It's so simple it doesn't have any options, or a man page. It's so simple you don't need one. Just put uptime3 into a folder in your path, and run it.
-It's THAT SIMPLE. If I could I would mail every person who downloads this a big "GO!" button for thier desk, but I'm poor and no.
-</p>
+This is mostly a pet project to relearn python at this point. If you want to go back you can find it written in c++, but I removed a repo it relies on... sooooo. Yeah. Python it is.
 
-<p>Really all I wanted was uptime -p to say "uptime:", instead of "up:". But apparently that was too much.</p>
+If you use -o, or --origin it will also print the origin time , aka the time the machine came up.
