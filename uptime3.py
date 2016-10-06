@@ -25,8 +25,7 @@ def sincewhen(time):
 	# everything time related
 	since += fo[3] + ":" + fo[4] + "."
 
-	print("Up since: ", since)
-	return
+	print("Up since:", since)
 
 
 
