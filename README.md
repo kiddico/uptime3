@@ -1,5 +1,5 @@
 ## Uptime3
-### The best gosh darn uptime application to grace our beautiful planet.
+### The best gosh darn uptime application to grace this beautiful green glob of dirt.
 
 This is mostly a pet project to relearn python at this point. If you want to go back you can find it written in c++, but I removed a repo it relies on... sooooo. Yeah. Python it is.
 
