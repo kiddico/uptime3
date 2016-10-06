@@ -2,36 +2,32 @@
 # Nick Chirico
 # Oct 6, 2016
 
+# next up is to add an option to see when the machine was turned on.
+# just for fun
 import time
 
-# First up is to get the uptime in seconds from the system file
+## read up to the first period of /proc/uptime
 f = open('/proc/uptime', 'r')
-time = f.read()
+time = int ( f.read().split ('.',1) [0] )
 
-
-
-# Remove unused value, everything after the '.', then finaly make it an int
-time = int(time.split(' ', 1)[0].split('.',1)[0])
-
-
-
-# Minutes
+# Actual calculations - > I decided to do it from the bottom up this time around
+## Minutes
 minutes = int ( ( time / 60 ) % 60)
 overflow = int ( ( time / 60 ) - ( minutes ) )
 
-# hours
+## Hours
 hours = int ( ( overflow / 60 ) % 24 )
 overflow = int ( ( overflow / 60 ) - ( hours ) )
 
-# days
+## Days
 days = int ( ( overflow / 24) % 24 )
 overflow = int ( ( overflow / 24 ) - ( days ) )
 
-# weeks
+## Weeks
 weeks = int ( (overflow / 7 ) % 7 )
 
 
-
+# This will be printed later. Concat on relevant info
 output = "Uptime: "
 
 if weeks >= 1:
@@ -45,6 +41,7 @@ if hours >= 1:
 
 if minutes >= 1:
 	output = output + str ( int ( minutes ) ) + " minutes."
+# Let's be proper now. In case this is done on the hour mark.
 else:
 	output += "."
 
