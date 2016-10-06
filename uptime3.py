@@ -4,7 +4,28 @@
 
 # next up is to add an option to see when the machine was turned on.
 # just for fun
-import time
+import datetime
+import calendar
+import sys
+
+def sincewhen(time):
+	delta = datetime.timedelta(seconds=time)
+	origin = str ( datetime.datetime.now() - delta )
+	fo = origin.replace(" ","-")
+	fo = fo.replace(":","-")
+	fo = fo.replace(":","-")
+	fo = fo.split(".",1)[0]
+	fo = fo.split("-")
+
+	# Get month from provided number
+	since = calendar.month_name[int(fo[1])]
+	# Everyhting date related
+	since += " " + fo[2].replace("0","") + " " + fo[0] + " at "
+	# everything time related
+	since += fo[3] + ":" + fo[4] + "."
+
+	print("Up since: ", since)
+	return
 
 ## read up to the first period of /proc/uptime
 f = open('/proc/uptime', 'r')
@@ -46,3 +67,11 @@ else:
 	output += "."
 
 print(output)
+
+if (len(sys.argv) > 1 ):
+	for arg in sys.argv:
+		if arg == "-o" or arg == "--origin":
+			sincewhen(time)
+
+
+
