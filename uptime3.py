@@ -8,23 +8,23 @@ import time
 
 ## read up to the first period of /proc/uptime
 f = open('/proc/uptime', 'r')
-time = int ( f.read().split ('.',1) [0] )
+time = int ( f.read().split('.',1)[0] )
 
 # Actual calculations - > I decided to do it from the bottom up this time around
 ## Minutes
-minutes = int ( ( time / 60 ) % 60)
-overflow = int ( ( time / 60 ) - ( minutes ) )
+minutes = int (( time/60 ) % 60 )
+overflow = int (( time/60 ) - ( minutes ))
 
 ## Hours
-hours = int ( ( overflow / 60 ) % 24 )
-overflow = int ( ( overflow / 60 ) - ( hours ) )
+hours = int (( overflow/60 ) % 24 )
+overflow = int (( overflow/60 ) - ( hours ))
 
 ## Days
-days = int ( ( overflow / 24) % 24 )
-overflow = int ( ( overflow / 24 ) - ( days ) )
+days = int (( overflow/24 ) % 24 )
+overflow = int (( overflow/24 ) - ( days ))
 
 ## Weeks
-weeks = int ( (overflow / 7 ) % 7 )
+weeks = int (( overflow/7 ) % 7 )
 
 
 # This will be printed later. Concat on relevant info
