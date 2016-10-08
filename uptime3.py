@@ -2,8 +2,6 @@
 # Nick Chirico
 # Oct 6, 2016
 
-# next up is to add an option to see when the machine was turned on.
-# just for fun
 import datetime
 import calendar
 import sys
