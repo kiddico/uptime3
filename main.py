@@ -1,11 +1,8 @@
 #!/usr/bin/python3
 # Nick Chirico
-# Oct 6, 2016
+# Oct 19, 2016
 
-import datetime
-import calendar
 import sys
-
 from uptime3 import up, origin
 
 def main():
