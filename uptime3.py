@@ -7,7 +7,7 @@ import calendar
 import sys
 
 # Given the uptime in seconds, prints the date and time the system came up.
-def sincewhen(time):
+def origin(time):
 	delta = datetime.timedelta(seconds=time)
 	origin = str ( datetime.datetime.now() - delta )
 	formatted = origin.replace(" ","-")
@@ -75,10 +75,10 @@ def main():
 	if ( to_print == 0 ):
 		up(time)
 	if ( to_print == 1 ):
-		sincewhen(time)
+		origin(time)
 	if ( to_print == 2 ):
 		up(time)
-		sincewhen(time)
+		origin(time)
 
 
 
