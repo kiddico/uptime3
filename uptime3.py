@@ -25,6 +25,8 @@ def origin(time):
 
 	print("Up since:", since)
 
+
+# Given the uptime in seconds prints the uptime in a human readable format
 def up(time):
 	# Actual Calculations
 	## Minutes
