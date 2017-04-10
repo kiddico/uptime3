@@ -23,7 +23,7 @@ def origin(time):
 	# everything time related
 	since += formatted[3] + ":" + formatted[4] + "."
 
-	print("Up since:", since)
+	print("Up since: "+ since)
 
 
 # Given the uptime in seconds prints the uptime in a human readable format
